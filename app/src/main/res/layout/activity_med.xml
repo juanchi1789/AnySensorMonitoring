@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Med">
+
+    <EditText
+        android:id="@+id/edittext_remove"
+        android:layout_width="79dp"
+        android:layout_height="wrap_content"
+        android:hint="id ..."
+        android:inputType="number"
+        android:visibility="invisible" />
+
+    <ImageButton
+        android:id="@+id/button_remove"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_alignBottom="@id/edittext_remove"
+        android:layout_marginStart="60dp"
+        android:layout_marginBottom="0dp"
+        android:layout_toEndOf="@id/edittext_remove"
+        android:background="@color/black"
+        android:src="@drawable/ic_delete"
+        android:visibility="invisible" />
+
+    <EditText
+        android:id="@+id/Descrip_med"
+        android:layout_width="309dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="191dp"
+        android:ems="10"
+        android:hint="Descripcion breve"
+        android:inputType="textPersonName" />
+
+    <ImageButton
+        android:id="@+id/button_insert"
+        android:layout_width="52dp"
+        android:layout_height="46dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="277dp"
+        android:layout_marginBottom="109dp"
+        android:background="#F8D0DE"
+        android:src="@drawable/ic_add" />
+
+    <EditText
+        android:id="@+id/Nombre_med"
+        android:layout_width="306dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/Descrip_med"
+        android:layout_alignParentStart="true"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="23dp"
+        android:layout_marginBottom="22dp"
+        android:ems="10"
+        android:hint="Nombre del Med"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/edittext_insert"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="23dp"
+        android:layout_marginBottom="18dp"
+        android:hint="0"
+        android:inputType="number"
+        android:text="0"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/button_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="137dp"
+        android:layout_marginBottom="107dp"
+        android:background="@color/black"
+        android:text="Save"
+        app:backgroundTint="@color/purple_200" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="412dp"
+        android:layout_height="400dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="-1dp"
+        android:layout_marginBottom="329dp"
+        android:background="#F3E6EB"
+        android:padding="4dp"
+        android:scrollbars="vertical" />
+
+    <ImageView
+        android:layout_width="135dp"
+        android:layout_height="151dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="140dp"
+        android:layout_marginBottom="-35dp"
+        android:src="@drawable/medi" />
+
+</RelativeLayout>

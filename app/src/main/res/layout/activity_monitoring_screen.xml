@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MonitoringScreen">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+
+
+        <Button
+            android:id="@+id/btnClearInput"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="5"
+            android:text="Limpiar Salida" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <CheckBox
+            android:id="@+id/chkScroll"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="0dp"
+            android:checked="true"
+            android:text="Scroll"
+            android:textColorLink="#ECA6BD" />
+
+        <CheckBox
+            android:id="@+id/chkReceiveText"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Activar monitoreo"
+            android:textColorHighlight="#CC9EAE"
+            android:textColorLink="#E91E63" />
+
+        <ScrollView
+            android:id="@+id/viewScroll"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/txtReceive"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:background="#eeeeee"
+                android:typeface="monospace"
+                android:hint="El mesnsaje se mostrara aqui ..."
+                android:scrollbars="vertical"
+                android:layout_marginTop="20dp"/>
+        </ScrollView>
+
+        <ImageView
+            android:layout_width="89dp"
+            android:layout_height="66dp"
+            android:layout_gravity="center"
+            android:src="@drawable/corazon" />
+
+    </LinearLayout>
+
+
+
+
+
+
+</LinearLayout>
